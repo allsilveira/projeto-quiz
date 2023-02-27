@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-
 .container {
     position: relative;
 }
@@ -42,7 +41,7 @@
 }
 
 .gradient-background-img {
-    background-image: url("/assets/img/img-fundo-quiz01.jpg");
+    /* background-image: url("/assets/img/img-fundo-quiz01.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,19 +54,28 @@
         margin: 50px 10px !important;
         max-width: 100%;
     }
+
     .container-question-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
+
     .gradient-background {
         border-radius: 50px 50px 0px 0px;
     }
-    .gradient-background-img {
-        /* height: 200px; */
-        border-radius: 0px 0px 50px 50px;
+
+    /* .gradient-background-img{
+
+    } */
+
+    img {
+        border-radius: 0px 0px 50px 50px !important;
+        height: 60% !important;
     }
+
     .overlay {
-        width: 92% !important;
+        width: 100% !important;
+        height: 65.5% !important;
     }
 }
 
@@ -112,7 +120,7 @@ input[type="button"].option-btn:hover {
     margin: 0 auto;
     top: 0;
     width: 100%;
-    height: 63%;
+    height: 66%;
     z-index: 1;
     border-radius: 50px;
     background: linear-gradient(0deg, rgba(131, 185, 209, 0.8) 0%, rgba(110, 71, 225, 0.7) 100%);
@@ -122,6 +130,7 @@ input[type="button"].option-btn:hover {
     padding-top: 105px;
     color: #ffffff;
 }
+
 .overlay::before {
     content: "";
     display: inline-block;
@@ -147,8 +156,9 @@ input[type="button"].option-btn:hover {
     background-size: contain;
     background-position: center;
     bottom: 50px;
-    
+
 }
+
 .linha-branca-overlay {
     width: 250px;
     height: 5px;
@@ -165,9 +175,15 @@ input[type="button"].option-btn:hover {
     text-shadow: 0px -1px 6px #000000;
 }
 
-.linha-branca  {
+.linha-branca {
     width: 140px;
     height: 5px;
     margin-top: 8px;
     background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0px 50px 50px 0px;
 }
