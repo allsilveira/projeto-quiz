@@ -63,11 +63,7 @@
     .gradient-background {
         border-radius: 50px 50px 0px 0px;
     }
-
-    /* .gradient-background-img{
-
-    } */
-
+    
     img {
         border-radius: 0px 0px 50px 50px !important;
         height: 60% !important;
